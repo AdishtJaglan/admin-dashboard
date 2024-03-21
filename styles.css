@@ -6,7 +6,6 @@ body {
 .container {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    gap: 6px;
 }
 
 .sidebar {
@@ -77,6 +76,10 @@ body {
     gap: 4px;
     grid-template-columns: 2.5fr 1fr;
     grid-template-rows: 0.5fr 8fr;
+
+    background-color: #edede9;
+    padding: 8px;
+    padding-left: 32px;
 }
 
 .heading {
@@ -85,6 +88,9 @@ body {
 
     display: grid;
     grid-template-columns: 2.5fr 1fr;
+
+    font-size: 20px;
+    font-weight: 550;
 }
 
 .heading p {
@@ -97,7 +103,9 @@ body {
 
 .card {
     width: 90%;
+
     border: 1px solid black;
+    border-radius: 50px;
 }
 
 .projects {
@@ -168,7 +176,7 @@ body {
     border-radius: 20px;
     border: none;
 
-    background-color: lightgrey;
+    background-color: #edede9;
 }
 
 .right-info {
