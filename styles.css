@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .container {
@@ -92,4 +93,42 @@ body {
 
 .announcement-container {
     border: 1px solid black;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+
+    padding-left: 12px;
+}
+
+.option {
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-direction: row;
+}
+
+.option img {
+    width: 8%;
+}
+
+.sidebar .option:first-child {
+    font-size: 24px;
+    margin-top: 12px;
+    margin-bottom: 24px;
+}
+
+.sidebar .option:first-child img {
+    width: 10%;
+}
+
+.sidebar .option:nth-child(7) {
+    margin-bottom: 24px;
 }
