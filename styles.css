@@ -135,7 +135,12 @@ body {
 }
 
 .announcement-container {
-    border: 1px solid black;
+    border-radius: 25px;
+
+    background-color: white;
+
+    display: flex;
+    justify-content: center;
 }
 
 .sidebar {
@@ -275,4 +280,28 @@ body {
 
 .account-info p {
     margin: 0;
+}
+
+.announcement-body {
+    width: 80%;
+    padding: 6px;
+}
+
+.announcement p {
+    margin: 0;
+}
+
+.announcement {
+    margin: 16px;
+}
+
+.announcement-container-heading {
+    padding-bottom: 8px;
+
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.announcements-trending {
+    margin-right: 12px;
 }
