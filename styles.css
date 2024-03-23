@@ -364,3 +364,7 @@ body {
 .light-text {
     font-size: 13px;
 }
+
+.icon {
+    cursor: pointer;
+}
