@@ -12,8 +12,10 @@ body {
     grid-column: 1/2;
     grid-row: 1/3;
 
-    background-color: lightskyblue;
+    background-color: #0ea5e9;
     color: white;
+
+    padding: 8px;
 }
 
 .header {
@@ -25,6 +27,19 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    position: relative;
+}
+
+.header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background-color: rgba(13, 9, 9, 0.1);
+    z-index: 1;
 }
 
 .user-info {
@@ -62,7 +77,10 @@ body {
     padding-right: 35px;
 
     border-radius: 20px;
-    background-color: lightskyblue;
+    background-color: #0ea5e9;
+
+    color: white;
+    font-weight: 540;
 }
 
 .nav .greeting {
@@ -77,7 +95,7 @@ body {
     grid-template-columns: 2.5fr 1fr;
     grid-template-rows: 0.5fr 8fr;
 
-    background-color: #edede9;
+    background-color: #e2e8f0;
     padding: 8px;
     padding-left: 32px;
 }
@@ -105,6 +123,7 @@ body {
     width: 90%;
 
     border-radius: 25px;
+    box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.5), 5px 0px 10px -5px rgba(0, 0, 0, 0.5);
 
     display: flex;
     justify-content: center;
@@ -124,6 +143,7 @@ body {
 .trending {
     border: 1px solid white;
     border-radius: 20px;
+    box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.5), 5px 0px 10px -5px rgba(0, 0, 0, 0.5);
 
     background-color: white;
 
@@ -136,6 +156,7 @@ body {
 
 .announcement-container {
     border-radius: 25px;
+    box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.5), 5px 0px 10px -5px rgba(0, 0, 0, 0.5);
 
     background-color: white;
 
@@ -148,8 +169,8 @@ body {
     flex-direction: column;
 
     color: black;
-    font-weight: bold;
-    font-size: 14px;
+    font-size: 20px;
+    font-weight: 550;
 
     padding-left: 12px;
 }
@@ -159,22 +180,24 @@ body {
 
     display: flex;
     align-items: center;
-    gap: 6px;
+    gap: 16px;
     flex-direction: row;
 }
 
 .option img {
-    width: 8%;
+    width: 11%;
 }
 
 .sidebar .option:first-child {
-    font-size: 24px;
+    font-size: 32px;
+    font-weight: bold;
+
     margin-top: 12px;
     margin-bottom: 24px;
 }
 
 .sidebar .option:first-child img {
-    width: 10%;
+    width: 15%;
 }
 
 .sidebar .option:nth-child(7) {
@@ -196,9 +219,12 @@ body {
     height: 70%;
     border-radius: 20px;
     border: none;
+    outline: none;
 
-    background-color: #edede9;
+    background-color: #e2e8f0;
 }
+
+
 
 .right-info {
     margin-right: 32px;
@@ -215,7 +241,7 @@ body {
 
 .left-info {
     margin-left: 32px;
-    width: 50%;
+    width: 65%;
 
     display: flex;
     justify-content: flex-start;
@@ -281,6 +307,14 @@ body {
 
 .account-info p {
     margin: 0;
+
+    font-size: 13px;
+    font-weight: 100;
+    color: #737373;
+}
+
+.account-info p:nth-child(1) {
+    color: black;
 }
 
 .announcement-body {
@@ -305,4 +339,14 @@ body {
 
 .announcements-trending {
     margin-right: 12px;
+}
+
+.content {
+    color: #737373;
+
+    font-size: 14px;
+}
+
+.light-text {
+    font-size: 13px;
 }
